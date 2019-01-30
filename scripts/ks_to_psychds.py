@@ -31,10 +31,9 @@ def import_KS_data(file_name,path=""):
 	file.close()
 
 for filename in os.listdir(os.getcwd()+"/../raw_data/source_data/"):
-	# if filename[-9:]=="-evts.txt"
 	if filename[-9:]=='-evts.txt':
 		filename=filename[:-9]
-		with open ('../raw_data/%s.tsv' %(filename), 'w') as tsv_timecourse_file:
+		with open ('../raw_data/%s_timecourse_data.tsv' %(filename), 'w') as tsv_timecourse_file:
 			tsv_writer = csv.writer(tsv_timecourse_file, delimiter='\t')
 			tsv_writer.writerow(['Time', 'Duration', 'Trackname', 'Comments'])
 			for i in import_KS_data(filename+"-evts.txt",path):
