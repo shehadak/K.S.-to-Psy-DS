@@ -1,0 +1,36 @@
+"@context":"http://schema.org/",
+	"@type":"Dataset",
+	"name":"K. Scott Data Psych-DS Dataset",
+	"description":"This is a translation of K. Scott's dataset into Psych-DS",
+	"schemaVersion":"Psych-DS 0.1.0",
+	"creator":[
+		{"@type":"Person",
+		 "name":"Kim Scott"}],		
+	"citation":"",
+	"keywords":[],
+	"variableMeasured":[
+		{"type": "PropertyValue",
+			"unitText": "Milliseconds",
+			"unitCode":"C26",
+			"name": "Time",
+			"description": "The time at which an event was coded.",
+			"naValues":"NA"
+		},
+		{"type": "PropertyValue",
+			"unitText": "Milliseconds",
+			"unitCode": "C26",
+			"name": "Duration",
+			"description": "Duration of parental behavior events.",
+			"naValues":"0"
+		},
+		{"type": "PropertyValue",
+			"name": "Trackname",
+			"description": "The type of the event coded.",
+			"naValues":"NA"
+		},
+		{"type": "PropertyValue",
+			"name": "Comments",
+			"description": "Comments by coder.",
+			"naValues":"(null)"
+		}
+	]
